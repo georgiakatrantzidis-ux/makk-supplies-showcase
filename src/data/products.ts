@@ -9,6 +9,13 @@ import productElectricalBox from "@/assets/product-electrical-box.jpg";
 import productEmergencyLighting from "@/assets/product-emergency-lighting.jpg";
 import productConnectorsFittings from "@/assets/product-connectors-fittings.jpg";
 import productEvCharger from "@/assets/product-ev-charger.jpg";
+import productMultimeter from "@/assets/product-multimeter.png";
+import productTransformer from "@/assets/product-transformer.png";
+import productSolarInverter from "@/assets/product-solar-inverter.png";
+import productSwitchgear from "@/assets/product-switchgear.png";
+import productControlPanel from "@/assets/product-control-panel.png";
+import productCableDrum from "@/assets/product-cable-drum.png";
+import productDieselGenerator from "@/assets/product-diesel-generator.png";
 
 export type Product = {
   id: string;
@@ -43,6 +50,7 @@ export const categories = [
   "Connectors & Fittings",
   "EV Chargers",
   "Generators",
+  "Tools & Testing Equipment",
 ];
 
 function formatPrice(n: number): string {
@@ -196,4 +204,15 @@ export const products: Product[] = [
   { id: "51", name: "Diesel Generator 200kW — Prime Power", price: 52000, sku: "GN-DSL-200KW", category: "Generators", group: "Diesel Generators", description: "200kW prime-rated diesel generator. Radiator cooled. For continuous duty applications.", image: productGenerator },
 
   { id: "52", name: "Natural Gas Generator 30kW — Standby", price: 14200, sku: "GN-NG-30KW", category: "Generators", group: "Natural Gas Generators", description: "30kW natural gas standby generator. Automatic transfer. Weatherproof enclosure.", image: productGenerator },
+
+  // Tools & Testing Equipment
+  { id: "53", name: "Digital Multimeter — True-RMS AC/DC", price: 29900, sku: "TL-MM-PRO", category: "Tools & Testing Equipment", group: "Digital Multimeters", description: "Professional True-RMS digital multimeter. Industrial tier with auto-ranging, backlit display, and premium test leads.", image: productMultimeter },
+
+  // New High-Ticket Additions
+  { id: "54", name: "Industrial Power Transformer 500kVA", price: 18500, sku: "TX-500KVA", category: "Distribution Equipment", group: "Main Breaker Panels", description: "500kVA industrial power transformer for heavy-duty commercial voltage regulation.", image: productTransformer },
+  { id: "55", name: "Commercial Solar String Inverter 100kW", price: 12000, sku: "INV-SOL-100KW", category: "Distribution Equipment", group: "Main Breaker Panels", description: "100kW commercial-grade solar string inverter with high-efficiency MPPT tracking.", image: productSolarInverter },
+  { id: "56", name: "Heavy-Duty Substation Switchgear", price: 19500, sku: "SG-SUB-HD", category: "Distribution Equipment", group: "Main Breaker Panels", description: "Heavy-duty substation switchgear for safe high-voltage power distribution.", image: productSwitchgear },
+  { id: "57", name: "Automated Facility Control Panel", price: 8500, sku: "CP-AUTO-FAC", category: "Electrical Boxes", group: "Enclosures", description: "Automated facility control panel enclosure with pre-wired DIN rails.", image: productControlPanel },
+  { id: "58", name: "High-Voltage Copper Cable Drum (300m)", price: 15000, sku: "CBL-HV-300M", category: "Wire & Cable", group: "Bare Copper Grounding Wire", description: "300 meters of premium high-voltage copper cable on an industrial wooden drum.", image: productCableDrum },
+  { id: "59", name: "Industrial Diesel Backup Generator 250kW", price: 19800, sku: "GN-DSL-250KW", category: "Generators", group: "Diesel Generators", description: "250kW industrial-grade diesel backup generator in a weather-proof enclosure.", image: productDieselGenerator },
 ];

@@ -59,9 +59,9 @@ export default function ContactPage() {
             <h2 className="font-semibold text-foreground mb-4">Get in Touch</h2>
             <div className="space-y-4">
               {[
-                { icon: MapPin, label: "Toronto, Ontario, Canada" },
-                { icon: Mail, label: "info@makksupplies.ca" },
-                { icon: Phone, label: "(416) 555-0192" },
+                { icon: MapPin, label: "845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada" },
+                { icon: Mail, label: "info@makksupplies.com" },
+                { icon: Phone, label: "(416) 857-8831" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
                   <item.icon size={16} className="text-accent shrink-0" />

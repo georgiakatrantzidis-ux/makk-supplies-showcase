@@ -18,7 +18,7 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2.5">
           <span className="w-8 h-8 rounded bg-accent flex items-center justify-center text-accent-foreground font-bold text-sm">M</span>
-          <span className="font-bold text-lg text-foreground">Makk Supplies</span>
+          <span className="font-bold text-lg text-foreground">MAKK SUPPLIES</span>
         </Link>
 
         {/* Desktop */}
