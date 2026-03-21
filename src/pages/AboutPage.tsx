@@ -8,13 +8,13 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
             <p>
-              Makk Supplies is a Toronto-based distributor of premium building materials and electrical supplies. We serve commercial contractors, developers, and project managers across Ontario and beyond.
+              Makk Supplies is a Toronto-based distributor of premium electrical supplies and building materials. We serve contractors, developers, project managers, and individual customers across Ontario and beyond.
             </p>
             <p>
-              Our inventory includes everything from structural steel beams and Italian marble to NMD90 copper wire bundles, industrial generators, LED lighting, breaker panels, transformers, and conduit — all sourced from trusted manufacturers and available in commercial quantities.
+              Our inventory includes NMD90 copper wire bundles, industrial generators, fire alarm systems, EV chargers, LED lighting, breaker panels, conduit, heating & ventilation equipment — all sourced from trusted manufacturers and available in any quantity.
             </p>
             <p>
-              We operate as a B2B supplier. Pricing is available upon request and we work closely with our clients to source materials that meet their project specifications, timelines, and budgets.
+              We serve both businesses and individuals. Whether you need a single item or a bulk order, contact us for pricing and we'll work with you to meet your project specifications, timelines, and budgets.
             </p>
             <p>
               Whether you're building a high-rise, renovating a commercial space, or managing a large-scale industrial project — we have the materials and the expertise to support your work.
