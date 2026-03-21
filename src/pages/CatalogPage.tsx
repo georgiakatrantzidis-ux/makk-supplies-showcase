@@ -1,22 +1,18 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Search } from "lucide-react";
-import { products, categories } from "@/data/products";
+import { categories, getProductGroups, slugify } from "@/data/products";
 
 export default function CatalogPage() {
   const [activeCategory, setActiveCategory] = useState("All");
   const [search, setSearch] = useState("");
 
-  const filtered = products.filter((p) => {
-    const matchCat = activeCategory === "All" || p.category === activeCategory;
-    const matchSearch = p.name.toLowerCase().includes(search.toLowerCase()) || p.sku.toLowerCase().includes(search.toLowerCase());
-    return matchCat && matchSearch;
-  });
+  const groups = getProductGroups(activeCategory, search);
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
       <h1 className="text-2xl font-bold text-foreground mb-1">Product Catalog</h1>
-      <p className="text-sm text-muted-foreground mb-6">Browse our full inventory. All prices are for bulk/commercial quantities. Contact us for exact quotes.</p>
+      <p className="text-sm text-muted-foreground mb-6">Browse our full inventory. Contact us for exact quotes and availability.</p>
 
       {/* Search & filters */}
       <div className="flex flex-col sm:flex-row gap-4 mb-8">
@@ -48,27 +44,32 @@ export default function CatalogPage() {
         ))}
       </div>
 
-      <p className="text-xs text-muted-foreground mb-4">{filtered.length} product{filtered.length !== 1 ? "s" : ""}</p>
+      <p className="text-xs text-muted-foreground mb-4">{groups.length} product group{groups.length !== 1 ? "s" : ""}</p>
 
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-        {filtered.map((p) => (
-          <div key={p.id} className="border border-border rounded bg-background overflow-hidden group">
+        {groups.map((g) => (
+          <Link
+            key={g.group}
+            to={`/catalog/${slugify(g.group)}`}
+            className="border border-border rounded bg-background overflow-hidden group block hover:shadow-md transition-shadow"
+          >
             <div className="aspect-square overflow-hidden bg-muted">
-              <img src={p.image} alt={p.name} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
+              <img src={g.image} alt={g.group} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
             </div>
             <div className="p-3.5">
-              <span className="text-[10px] text-muted-foreground uppercase tracking-wide">{p.category}</span>
-              <h3 className="font-medium text-sm text-foreground mt-1 leading-snug line-clamp-2">{p.name}</h3>
-              <p className="text-accent font-bold text-sm mt-1.5">{p.price}</p>
-              <p className="text-xs text-muted-foreground mt-1">SKU: {p.sku}</p>
-              <p className="text-xs text-muted-foreground mt-2 leading-relaxed line-clamp-2">{p.description}</p>
-              <Link to="/contact" className="text-xs text-accent hover:underline mt-3 inline-block">Inquire →</Link>
+              <span className="text-[10px] text-muted-foreground uppercase tracking-wide">{g.category}</span>
+              <h3 className="font-medium text-sm text-foreground mt-1 leading-snug">{g.group}</h3>
+              <p className="text-accent font-bold text-sm mt-1.5">{g.priceRange}</p>
+              {g.variantCount > 1 && (
+                <p className="text-[11px] text-muted-foreground mt-1">{g.variantCount} variants available</p>
+              )}
+              <span className="text-xs text-accent mt-2 inline-block">View details →</span>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
 
-      {filtered.length === 0 && (
+      {groups.length === 0 && (
         <div className="text-center py-16">
           <p className="text-muted-foreground text-sm">No products match your search.</p>
           <button onClick={() => { setSearch(""); setActiveCategory("All"); }} className="text-accent text-sm mt-2 hover:underline">Clear filters</button>
