@@ -10,16 +10,16 @@ export default function ProductDetailPage() {
     return (
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16 text-center">
         <p className="text-muted-foreground mb-4">Product not found.</p>
-        <Link to="/catalog" className="text-accent text-sm hover:underline">← Back to catalog</Link>
+        <Link to="/products" className="text-accent text-sm hover:underline">← Back to products</Link>
       </div>
     );
   }
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-      <Link to="/catalog" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6">
+      <Link to="/products" className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors mb-6">
         <ArrowLeft size={14} />
-        Back to catalog
+        Back to products
       </Link>
 
       {/* Header */}

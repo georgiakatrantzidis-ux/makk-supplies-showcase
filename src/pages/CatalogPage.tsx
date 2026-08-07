@@ -11,7 +11,7 @@ export default function CatalogPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-10">
-      <h1 className="text-2xl font-bold text-foreground mb-1">Product Catalog</h1>
+      <h1 className="text-2xl font-bold text-foreground mb-1">Our Products</h1>
       <p className="text-sm text-muted-foreground mb-6">Browse our full inventory. Contact us for exact quotes and availability.</p>
 
       {/* Search & filters */}
@@ -50,7 +50,7 @@ export default function CatalogPage() {
         {groups.map((g) => (
           <Link
             key={g.group}
-            to={`/catalog/${slugify(g.group)}`}
+            to={`/products/${slugify(g.group)}`}
             className="border border-border rounded bg-background overflow-hidden group block hover:shadow-md transition-shadow"
           >
             <div className="aspect-square overflow-hidden bg-muted">

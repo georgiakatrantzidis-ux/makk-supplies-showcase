@@ -28,8 +28,8 @@ export default function HomePage() {
             Workpot INC. provides high-quality, modern furniture and art for residential and commercial spaces. We specialize in custom orders—email us to get your customized piece built exactly how you want it.
           </p>
           <div className="flex flex-wrap gap-3">
-            <Link to="/catalog" className="border border-hero-foreground/30 text-hero-foreground px-5 py-2.5 text-sm font-medium rounded hover:bg-hero-foreground/5 transition-colors active:scale-[0.97]">
-              View Catalog
+            <Link to="/products" className="border border-hero-foreground/30 text-hero-foreground px-5 py-2.5 text-sm font-medium rounded hover:bg-hero-foreground/5 transition-colors active:scale-[0.97]">
+              View Products
             </Link>
             <Link to="/contact" className="bg-accent text-accent-foreground px-5 py-2.5 text-sm font-medium rounded hover:opacity-90 transition-opacity active:scale-[0.97]">
               Email for Custom Order
@@ -66,13 +66,13 @@ export default function HomePage() {
           <div className="flex items-end justify-between mb-8">
             <div>
               <h2 className="text-2xl font-bold text-foreground">Featured Products</h2>
-              <p className="text-sm text-muted-foreground mt-1">A sample of our handcrafted collection — view the full catalog for everything.</p>
+              <p className="text-sm text-muted-foreground mt-1">A sample of our handcrafted collection — view all products for everything.</p>
             </div>
-            <Link to="/catalog" className="text-sm text-accent font-medium hover:underline hidden sm:block">View all →</Link>
+            <Link to="/products" className="text-sm text-accent font-medium hover:underline hidden sm:block">View all →</Link>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
             {featuredGroups.map((g) => (
-              <Link key={g.group} to={`/catalog/${slugify(g.group)}`} className="bg-background rounded border border-border overflow-hidden group block hover:shadow-md transition-shadow">
+              <Link key={g.group} to={`/products/${slugify(g.group)}`} className="bg-background rounded border border-border overflow-hidden group block hover:shadow-md transition-shadow">
                 <div className="aspect-[4/3] overflow-hidden bg-muted">
                   <img src={g.image} alt={g.group} className="w-full h-full object-cover group-hover:scale-[1.02] transition-transform duration-500" loading="lazy" />
                 </div>
@@ -87,7 +87,7 @@ export default function HomePage() {
               </Link>
             ))}
           </div>
-          <Link to="/catalog" className="text-sm text-accent font-medium hover:underline mt-6 block sm:hidden">View all →</Link>
+          <Link to="/products" className="text-sm text-accent font-medium hover:underline mt-6 block sm:hidden">View all →</Link>
         </div>
       </section>
 

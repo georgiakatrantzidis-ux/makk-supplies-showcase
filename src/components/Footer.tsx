@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-3">Quick Links</h4>
             <div className="space-y-2">
-              <Link to="/catalog" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">Catalog</Link>
+              <Link to="/products" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">Products</Link>
               <Link to="/about" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">About</Link>
               <Link to="/contact" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">Contact</Link>
               <Link to="/policies" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">Policies & Guarantees</Link>
@@ -33,7 +33,7 @@ export default function Footer() {
             <h4 className="font-semibold text-sm mb-3">Contact</h4>
             <div className="space-y-2 text-sm opacity-70">
               <p>845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada</p>
-              <p>info@workpotinc.com</p>
+              <p>georgiakatrantzidis@gmail.com</p>
               <p>(416) 857-8831</p>
             </div>
           </div>

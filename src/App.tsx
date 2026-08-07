@@ -25,8 +25,8 @@ const App = () => (
         <main className="min-h-[60vh]">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/catalog" element={<CatalogPage />} />
-            <Route path="/catalog/:slug" element={<ProductDetailPage />} />
+            <Route path="/products" element={<CatalogPage />} />
+            <Route path="/products/:slug" element={<ProductDetailPage />} />
             <Route path="/about" element={<AboutPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/policies" element={<PoliciesPage />} />

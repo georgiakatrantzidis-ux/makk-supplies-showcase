@@ -12,7 +12,10 @@ export default function ContactPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <h1 className="text-2xl font-bold text-foreground mb-1">Contact Us</h1>
-      <p className="text-sm text-muted-foreground mb-8">Get a quote for a custom piece, ask about a product, or set up a trade account.</p>
+      <p className="text-sm text-muted-foreground mb-8">
+        Get a quote for a custom piece, ask about a product, or set up a trade account.<br/>
+        <strong>For any order-related or support questions, please email us at georgiakatrantzidis@gmail.com.</strong>
+      </p>
 
       <div className="grid md:grid-cols-2 gap-10">
         {/* Form */}
@@ -60,7 +63,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               {[
                 { icon: MapPin, label: "845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada" },
-                { icon: Mail, label: "info@workpotinc.com" },
+                { icon: Mail, label: "georgiakatrantzidis@gmail.com" },
                 { icon: Phone, label: "(416) 857-8831" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
