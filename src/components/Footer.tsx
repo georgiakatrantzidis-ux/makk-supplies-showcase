@@ -7,11 +7,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2.5 mb-3">
-              <span className="w-7 h-7 rounded bg-accent flex items-center justify-center text-accent-foreground font-bold text-xs">M</span>
-              <span className="font-bold text-base">MAKK SUPPLIES</span>
+              <span className="w-7 h-7 rounded bg-accent flex items-center justify-center text-accent-foreground font-bold text-xs">W</span>
+              <span className="font-bold text-base">Workpot INC.</span>
             </div>
             <p className="text-sm opacity-70 max-w-xs leading-relaxed">
-              Premium building materials and electrical supplies for commercial and industrial projects across Canada.
+              Premium custom furniture and modern art pieces crafted with precision for residential and commercial spaces.
+            </p>
+            <p className="text-xs text-accent mt-3 font-semibold">
+              Flexible Worldwide Delivery • 100% Guarantee on all Refunds • Soft Cancellation Policy
+            </p>
+            <p className="text-xs text-muted-foreground mt-2">
+              Secure payments via Visa, Mastercard, Amex, PayPal & Bank Transfer.
             </p>
           </div>
           <div>
@@ -20,19 +26,20 @@ export default function Footer() {
               <Link to="/catalog" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">Catalog</Link>
               <Link to="/about" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">About</Link>
               <Link to="/contact" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">Contact</Link>
+              <Link to="/policies" className="block text-sm opacity-70 hover:opacity-100 transition-opacity">Policies & Guarantees</Link>
             </div>
           </div>
           <div>
             <h4 className="font-semibold text-sm mb-3">Contact</h4>
             <div className="space-y-2 text-sm opacity-70">
               <p>845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada</p>
-              <p>info@makksupplies.com</p>
+              <p>info@workpotinc.com</p>
               <p>(416) 857-8831</p>
             </div>
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-xs opacity-50">
-          © {new Date().getFullYear()} MAKK SUPPLIES. All rights reserved.
+          © {new Date().getFullYear()} Workpot INC. All rights reserved.
         </div>
       </div>
     </footer>

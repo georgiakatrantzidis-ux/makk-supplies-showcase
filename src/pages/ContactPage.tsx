@@ -12,7 +12,7 @@ export default function ContactPage() {
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
       <h1 className="text-2xl font-bold text-foreground mb-1">Contact Us</h1>
-      <p className="text-sm text-muted-foreground mb-8">Get a quote, ask about a product, or set up a wholesale account.</p>
+      <p className="text-sm text-muted-foreground mb-8">Get a quote for a custom piece, ask about a product, or set up a trade account.</p>
 
       <div className="grid md:grid-cols-2 gap-10">
         {/* Form */}
@@ -44,7 +44,7 @@ export default function ContactPage() {
               </div>
               <div>
                 <label className="block text-xs font-medium text-foreground mb-1">Message</label>
-                <textarea required rows={5} className="w-full px-3 py-2 text-sm border border-border rounded bg-background text-foreground focus:outline-none focus:ring-1 focus:ring-accent resize-none" placeholder="Tell us what you're looking for — products, quantities, project details..." />
+                <textarea required rows={5} className="w-full px-3 py-2 text-sm border border-border rounded bg-background text-foreground focus:outline-none focus:ring-1 focus:ring-accent resize-none" placeholder="Tell us what you're looking for — custom furniture specs, room dimensions, project details..." />
               </div>
               <button type="submit" className="bg-accent text-accent-foreground px-6 py-2.5 text-sm font-medium rounded hover:opacity-90 transition-opacity active:scale-[0.97]">
                 Send Message
@@ -60,7 +60,7 @@ export default function ContactPage() {
             <div className="space-y-4">
               {[
                 { icon: MapPin, label: "845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada" },
-                { icon: Mail, label: "info@makksupplies.com" },
+                { icon: Mail, label: "info@workpotinc.com" },
                 { icon: Phone, label: "(416) 857-8831" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
@@ -79,9 +79,9 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="bg-card border border-border rounded p-5">
-            <h3 className="font-semibold text-sm text-foreground mb-2">Wholesale Accounts</h3>
+            <h3 className="font-semibold text-sm text-foreground mb-2">Trade Accounts</h3>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              For ongoing pricing and priority fulfillment, contact us to set up a wholesale account. Volume discounts available for regular orders.
+              For ongoing pricing and priority fulfillment, contact us to set up a trade account. Special discounts are available for interior designers, architects, and developers.
             </p>
           </div>
         </div>

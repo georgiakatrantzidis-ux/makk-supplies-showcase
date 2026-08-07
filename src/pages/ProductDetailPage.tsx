@@ -40,6 +40,14 @@ export default function ProductDetailPage() {
           >
             Request a Quote
           </Link>
+          <div className="mt-6 pt-6 border-t border-border space-y-2">
+            <p className="text-sm font-semibold text-foreground">100% Guarantee on all products</p>
+            <p className="text-xs text-muted-foreground">• Worldwide delivery available</p>
+            <p className="text-xs text-muted-foreground">• Really flexible returns: 90 days for a full refund back</p>
+            <p className="text-xs text-muted-foreground">• Soft cancellation policy (cancel anytime before shipping)</p>
+            <p className="text-xs text-muted-foreground">• Secure payments via Visa, Mastercard & Bank Transfer</p>
+            <Link to="/policies" className="text-xs text-accent hover:underline block mt-2">Read our full policies</Link>
+          </div>
         </div>
       </div>
 
