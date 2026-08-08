@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logoImg from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", to: "/" },
@@ -17,7 +18,7 @@ export default function Navbar() {
     <nav className="bg-background border-b border-border sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2.5">
-          <span className="w-8 h-8 rounded bg-accent flex items-center justify-center text-accent-foreground font-bold text-sm">W</span>
+          <img src={logoImg} alt="Workpot INC. Logo" className="h-8 w-auto object-contain rounded" />
           <span className="font-bold text-lg text-foreground">Workpot INC.</span>
         </Link>
 

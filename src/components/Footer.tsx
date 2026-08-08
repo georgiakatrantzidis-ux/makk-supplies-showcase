@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logoImg from "@/assets/logo.png";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2.5 mb-3">
-              <span className="w-7 h-7 rounded bg-accent flex items-center justify-center text-accent-foreground font-bold text-xs">W</span>
+              <img src={logoImg} alt="Workpot INC. Logo" className="h-7 w-auto object-contain rounded bg-white" />
               <span className="font-bold text-base">Workpot INC.</span>
             </div>
             <p className="text-sm opacity-70 max-w-xs leading-relaxed">
