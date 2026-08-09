@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Mail, Phone } from "lucide-react";
+import { MapPin, Mail } from "lucide-react";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -64,7 +64,6 @@ export default function ContactPage() {
               {[
                 { icon: MapPin, label: "845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada" },
                 { icon: Mail, label: "georgiakatrantzidis@gmail.com" },
-                { icon: Phone, label: "(416) 857-8831" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
                   <item.icon size={16} className="text-accent shrink-0" />

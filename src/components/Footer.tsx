@@ -35,7 +35,6 @@ export default function Footer() {
             <div className="space-y-2 text-sm opacity-70">
               <p>845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada</p>
               <p>georgiakatrantzidis@gmail.com</p>
-              <p>(416) 857-8831</p>
             </div>
           </div>
         </div>
