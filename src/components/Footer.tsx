@@ -33,13 +33,14 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-3">Contact</h4>
             <div className="space-y-2 text-sm opacity-70">
-              <p>845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada</p>
+              <p>340 Jarvis St, Toronto, ON, M4Y 2G6</p>
               <p>georgiakatrantzidis@gmail.com</p>
             </div>
           </div>
         </div>
-        <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-xs opacity-50">
-          © {new Date().getFullYear()} Workpot INC. All rights reserved.
+        <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-xs opacity-50 flex flex-col sm:flex-row justify-between gap-4">
+          <p>© {new Date().getFullYear()} Workpot INC. All rights reserved.</p>
+          <p>a division of (Rawal's Investments)</p>
         </div>
       </div>
     </footer>

@@ -62,7 +62,7 @@ export default function ContactPage() {
             <h2 className="font-semibold text-foreground mb-4">Get in Touch</h2>
             <div className="space-y-4">
               {[
-                { icon: MapPin, label: "845 Harrington Court, Unit B01-1, Burlington, Ontario, L7N3P3, Canada" },
+                { icon: MapPin, label: "340 Jarvis St, Toronto, ON, M4Y 2G6" },
                 { icon: Mail, label: "georgiakatrantzidis@gmail.com" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
