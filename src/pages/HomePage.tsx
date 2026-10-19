@@ -25,7 +25,7 @@ export default function HomePage() {
             Premium Custom Furniture & Art
           </h1>
           <p className="text-hero-muted text-sm sm:text-base leading-relaxed max-w-lg mb-8">
-            Workpot INC. provides high-quality, modern furniture and art for residential and commercial spaces. We specialize in custom orders—email us to get your customized piece built exactly how you want it.
+            Royal Ontario Handicrafts provides high-quality, modern custom furniture and art for residential and commercial spaces. We specialize in custom orders—email us to get your customized piece built exactly how you want it.
           </p>
           <div className="flex flex-wrap gap-3">
             <Link to="/products" className="border border-hero-foreground/30 text-hero-foreground px-5 py-2.5 text-sm font-medium rounded hover:bg-hero-foreground/5 transition-colors active:scale-[0.97]">

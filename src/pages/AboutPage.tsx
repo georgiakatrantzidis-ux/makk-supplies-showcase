@@ -4,11 +4,11 @@ export default function AboutPage() {
   return (
     <div>
       <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
-        <h1 className="text-2xl font-bold text-foreground mb-4">About Workpot INC.</h1>
+        <h1 className="text-2xl font-bold text-foreground mb-4">About Royal Ontario Handicrafts</h1>
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div className="space-y-4 text-sm text-muted-foreground leading-relaxed">
             <p>
-              Workpot INC. is a premium custom furniture and art studio based in Toronto, Canada. We design and build modern, minimalist pieces for residential and commercial spaces across North America.
+              Royal Ontario Handicrafts is a premium custom furniture and art studio based in Ontario, Canada. We design and build modern, minimalist pieces for residential and commercial spaces across North America.
             </p>
             <p>
               Our collection includes solid wood dining tables, ergonomic accent chairs, custom storage solutions, and curated modern art. Every piece is built with attention to detail, using high-quality materials to ensure longevity and timeless aesthetics.
@@ -17,7 +17,7 @@ export default function AboutPage() {
               We believe in the power of custom design. Whether you need a specific dimension for a coffee table, a unique finish for a bookshelf, or an entirely bespoke piece of furniture, our team is ready to bring your vision to life. Email us for custom orders, and we'll work with you every step of the way.
             </p>
             <p>
-              From furnishing a cozy apartment to outfitting a large commercial space, Workpot INC. delivers furniture and art that transforms environments.
+              From furnishing a cozy apartment to outfitting a large commercial space, Royal Ontario Handicrafts delivers furniture and art that transforms environments.
             </p>
           </div>
           <div className="rounded overflow-hidden">

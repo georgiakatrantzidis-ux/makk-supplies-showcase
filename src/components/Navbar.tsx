@@ -18,8 +18,8 @@ export default function Navbar() {
     <nav className="bg-background border-b border-border sticky top-0 z-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         <Link to="/" className="flex items-center gap-2.5">
-          <img src={logoImg} alt="Workpot INC. Logo" className="h-8 w-auto object-contain rounded" />
-          <span className="font-bold text-lg text-foreground">Workpot INC.</span>
+          <img src={logoImg} alt="Royal Ontario Handicrafts Logo" className="h-8 w-auto object-contain rounded" />
+          <span className="font-bold text-base sm:text-lg text-foreground">Royal Ontario Handicrafts</span>
         </Link>
 
         {/* Desktop */}

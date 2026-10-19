@@ -8,8 +8,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2.5 mb-3">
-              <img src={logoImg} alt="Workpot INC. Logo" className="h-7 w-auto object-contain rounded bg-white" />
-              <span className="font-bold text-base">Workpot INC.</span>
+              <img src={logoImg} alt="Royal Ontario Handicrafts Logo" className="h-7 w-auto object-contain rounded bg-white" />
+              <span className="font-bold text-base">Royal Ontario Handicrafts</span>
             </div>
             <p className="text-sm opacity-70 max-w-xs leading-relaxed">
               Premium custom furniture and modern art pieces crafted with precision for residential and commercial spaces.
@@ -41,7 +41,7 @@ export default function Footer() {
         </div>
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-xs opacity-50 flex flex-col sm:flex-row justify-between gap-4">
           <div>
-            <p>© {new Date().getFullYear()} Workpot INC. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Royal Ontario Handicrafts. All rights reserved.</p>
             <p className="mt-1">Legal Business Name: 1001514805 ONTARIO INC. O/A as Royal Ontario Handicrafts</p>
           </div>
           <p>a division of (Rawal's Investments)</p>
