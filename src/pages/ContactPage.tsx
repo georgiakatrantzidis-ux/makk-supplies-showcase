@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { MapPin, Mail } from "lucide-react";
+import { MapPin, Mail, Phone } from "lucide-react";
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
@@ -14,7 +14,7 @@ export default function ContactPage() {
       <h1 className="text-2xl font-bold text-foreground mb-1">Contact Us</h1>
       <p className="text-sm text-muted-foreground mb-8">
         Get a quote for a custom piece, ask about a product, or set up a trade account.<br/>
-        <strong>For any order-related or support questions, please email us at georgiakatrantzidis@gmail.com.</strong>
+        <strong>For any order-related or support questions, please email us at sidrawal1200@gmail.com.</strong>
       </p>
 
       <div className="grid md:grid-cols-2 gap-10">
@@ -62,14 +62,22 @@ export default function ContactPage() {
             <h2 className="font-semibold text-foreground mb-4">Get in Touch</h2>
             <div className="space-y-4">
               {[
-                { icon: MapPin, label: "340 Jarvis St, Toronto, ON, M4Y 2G6" },
-                { icon: Mail, label: "georgiakatrantzidis@gmail.com" },
+                { icon: MapPin, label: "55 Barkwin Dr, Etobicoke, ON M9V 2W5" },
+                { icon: Mail, label: "sidrawal1200@gmail.com" },
+                { icon: Phone, label: "(647) 693-6987" },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3">
                   <item.icon size={16} className="text-accent shrink-0" />
                   <span className="text-sm text-muted-foreground">{item.label}</span>
                 </div>
               ))}
+            </div>
+          </div>
+          <div className="bg-card border border-border rounded p-5">
+            <h3 className="font-semibold text-sm text-foreground mb-2">Company Information</h3>
+            <div className="text-xs text-muted-foreground space-y-1">
+              <p><span className="font-medium text-foreground">Legal Business Name:</span> 1001514805 ONTARIO INC.</p>
+              <p><span className="font-medium text-foreground">Operating As:</span> Royal Ontario Handicrafts</p>
             </div>
           </div>
           <div className="bg-card border border-border rounded p-5">

@@ -33,13 +33,17 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-3">Contact</h4>
             <div className="space-y-2 text-sm opacity-70">
-              <p>340 Jarvis St, Toronto, ON, M4Y 2G6</p>
-              <p>georgiakatrantzidis@gmail.com</p>
+              <p>55 Barkwin Dr, Etobicoke, ON M9V 2W5</p>
+              <p>sidrawal1200@gmail.com</p>
+              <p>(647) 693-6987</p>
             </div>
           </div>
         </div>
         <div className="border-t border-primary-foreground/10 mt-10 pt-6 text-xs opacity-50 flex flex-col sm:flex-row justify-between gap-4">
-          <p>© {new Date().getFullYear()} Workpot INC. All rights reserved.</p>
+          <div>
+            <p>© {new Date().getFullYear()} Workpot INC. All rights reserved.</p>
+            <p className="mt-1">Legal Business Name: 1001514805 ONTARIO INC. O/A as Royal Ontario Handicrafts</p>
+          </div>
           <p>a division of (Rawal's Investments)</p>
         </div>
       </div>
